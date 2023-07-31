@@ -1,0 +1,61 @@
+From 7658b766c9a181d84f3adb49383070a39d45b9f7 Mon Sep 17 00:00:00 2001
+From: Seal <info@seal.security>
+Date: Thu, 9 Feb 2023 15:43:46 +0200
+Subject: [PATCH 1/1] Seal Security Hotfix for d3-color 2.0.0
+
+This patch fixes:
+  GHSA-36jr-mh4h-2g58
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/d3/d3-color/tree/v2.0.0
+---
+ src/color.js                          |  4 ++--
+ test/Seal-GHSA-36jr-mh4h-2g58-test.js | 19 +++++++++++++++++++
+ 2 files changed, 21 insertions(+), 2 deletions(-)
+ create mode 100644 test/Seal-GHSA-36jr-mh4h-2g58-test.js
+
+diff --git a/src/color.js b/src/color.js
+index 036d9f4..3e3ad49 100644
+--- a/src/color.js
++++ b/src/color.js
+@@ -6,8 +6,8 @@ export var darker = 0.7;
+ export var brighter = 1 / darker;
+ 
+ var reI = "\\s*([+-]?\\d+)\\s*",
+-    reN = "\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)\\s*",
+-    reP = "\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)%\\s*",
++    reN = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)\\s*",
++    reP = "\\s*([+-]?(?:\\d*\\.)?\\d+(?:[eE][+-]?\\d+)?)%\\s*",
+     reHex = /^#([0-9a-f]{3,8})$/,
+     reRgbInteger = new RegExp("^rgb\\(" + [reI, reI, reI] + "\\)$"),
+     reRgbPercent = new RegExp("^rgb\\(" + [reP, reP, reP] + "\\)$"),
+diff --git a/test/Seal-GHSA-36jr-mh4h-2g58-test.js b/test/Seal-GHSA-36jr-mh4h-2g58-test.js
+new file mode 100644
+index 0000000..83deeca
+--- /dev/null
++++ b/test/Seal-GHSA-36jr-mh4h-2g58-test.js
+@@ -0,0 +1,19 @@
++var tape = require("tape"),
++    d3Color = require("../");
++
++function build_blank(n) {
++    var ret = "rgb("
++    for (var i = 0; i < n; i++) {
++        ret += "1"
++    } return ret + "!";
++}
++
++tape("Regular expression denial of service eliminated", function (test) {
++    var time = Date.now();
++    var attack_str = build_blank(50000)
++    d3Color.rgb(attack_str)
++    var time_cost = Date.now() - time;
++    console.log("attack_str.length: " + attack_str.length + ": " + time_cost + " ms")
++    test.ok(time_cost < 20);
++    test.end();
++});
+-- 
+2.34.1
+

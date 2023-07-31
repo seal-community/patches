@@ -1,0 +1,45 @@
+From 8b79db63ef291fd80ecd1b66606ba1dbb6a9dfd3 Mon Sep 17 00:00:00 2001
+From: Seal <info@seal.security>
+Date: Thu, 18 May 2023 12:30:16 +0300
+Subject: [PATCH 1/1] Seal Security Hotfix for networkx 2.2
+
+This patch fixes:
+  SNYK-PYTHON-NETWORKX-1062709
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/networkx/networkx/tree/networkx-2.2
+---
+ networkx/readwrite/nx_yaml.py | 2 +-
+ requirements/extras.txt       | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/networkx/readwrite/nx_yaml.py b/networkx/readwrite/nx_yaml.py
+index 338849b9..bc7ebf13 100644
+--- a/networkx/readwrite/nx_yaml.py
++++ b/networkx/readwrite/nx_yaml.py
+@@ -96,7 +96,7 @@ def read_yaml(path):
+     except ImportError:
+         raise ImportError("read_yaml() requires PyYAML: http://pyyaml.org/")
+ 
+-    G = yaml.load(path)
++    G = yaml.load(path, Loader=yaml.FullLoader)
+     return G
+ 
+ 
+diff --git a/requirements/extras.txt b/requirements/extras.txt
+index 3c3fb75c..309d12d1 100644
+--- a/requirements/extras.txt
++++ b/requirements/extras.txt
+@@ -4,6 +4,6 @@ pandas>=0.23.3
+ matplotlib>=2.2.2
+ pygraphviz>=1.5
+ pydot>=1.2.4
+-pyyaml>=3.13
++pyyaml>=6.0
+ lxml>=4.2.3
+ gdal==1.10.0
+-- 
+2.39.2 (Apple Git-143)
+

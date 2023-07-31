@@ -1,0 +1,144 @@
+From a1d9e5a4a361ed334febf554ab08788d6b307c1c Mon Sep 17 00:00:00 2001
+From: Seal <info@seal.security>
+Date: Wed, 7 Jun 2023 15:04:30 +0300
+Subject: [PATCH 1/1] Seal Security Hotfix for js-yaml 3.12.1
+
+This patch fixes:
+  SNYK-JS-JSYAML-174129
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/nodeca/js-yaml/tree/3.12.1
+---
+ lib/js-yaml/loader.js         | 26 ++++++++++++++++++++++++++
+ test/issues/0480-date.yml     |  1 +
+ test/issues/0480-fn-array.yml |  4 ++++
+ test/issues/0480-fn.yml       |  1 +
+ test/issues/0480-fn2.yml      |  1 +
+ test/issues/0480.js           | 34 ++++++++++++++++++++++++++++++++++
+ 6 files changed, 67 insertions(+)
+ create mode 100644 test/issues/0480-date.yml
+ create mode 100644 test/issues/0480-fn-array.yml
+ create mode 100644 test/issues/0480-fn.yml
+ create mode 100644 test/issues/0480-fn2.yml
+ create mode 100644 test/issues/0480.js
+
+diff --git a/lib/js-yaml/loader.js b/lib/js-yaml/loader.js
+index 70e1a56..c1202be 100644
+--- a/lib/js-yaml/loader.js
++++ b/lib/js-yaml/loader.js
+@@ -30,6 +30,8 @@ var PATTERN_TAG_HANDLE            = /^(?:!|!!|![a-z\-]+!)$/i;
+ var PATTERN_TAG_URI               = /^(?:!|[^,\[\]\{\}])(?:%[0-9a-f]{2}|[0-9a-z\-#;\/\?:@&=\+\$,_\.!~\*'\(\)\[\]])*$/i;
+ 
+ 
++function _class(obj) { return Object.prototype.toString.call(obj); }
++
+ function is_EOL(c) {
+   return (c === 0x0A/* LF */) || (c === 0x0D/* CR */);
+ }
+@@ -284,6 +286,30 @@ function mergeMappings(state, destination, source, overridableKeys) {
+ function storeMappingPair(state, _result, overridableKeys, keyTag, keyNode, valueNode, startLine, startPos) {
+   var index, quantity;
+ 
++  // The output is a plain object here, so keys can only be strings.
++  // We need to convert keyNode to a string, but doing so can hang the process
++  // (deeply nested arrays that explode exponentially using aliases).
++  if (Array.isArray(keyNode)) {
++    keyNode = Array.prototype.slice.call(keyNode);
++
++    for (index = 0, quantity = keyNode.length; index < quantity; index += 1) {
++      if (Array.isArray(keyNode[index])) {
++        throwError(state, 'nested arrays are not supported inside keys');
++      }
++
++      if (typeof keyNode === 'object' && _class(keyNode[index]) === '[object Object]') {
++        keyNode[index] = '[object Object]';
++      }
++    }
++  }
++
++  // Avoid code execution in load() via toString property
++  // (still use its own toString for arrays, timestamps,
++  // and whatever user schema extensions happen to have @@toStringTag)
++  if (typeof keyNode === 'object' && _class(keyNode) === '[object Object]') {
++    keyNode = '[object Object]';
++  }
++
+   keyNode = String(keyNode);
+ 
+   if (_result === null) {
+diff --git a/test/issues/0480-date.yml b/test/issues/0480-date.yml
+new file mode 100644
+index 0000000..3fcac6e
+--- /dev/null
++++ b/test/issues/0480-date.yml
+@@ -0,0 +1 @@
++{ !<tag:yaml.org,2002:timestamp> '2019-04-05T12:00:43.467Z': 123 }
+diff --git a/test/issues/0480-fn-array.yml b/test/issues/0480-fn-array.yml
+new file mode 100644
+index 0000000..2e151bf
+--- /dev/null
++++ b/test/issues/0480-fn-array.yml
+@@ -0,0 +1,4 @@
++? [
++    123,
++    { toString: !<tag:yaml.org,2002:js/function> 'function (){throw new Error("code execution")}' }
++] : key
+diff --git a/test/issues/0480-fn.yml b/test/issues/0480-fn.yml
+new file mode 100644
+index 0000000..68412be
+--- /dev/null
++++ b/test/issues/0480-fn.yml
+@@ -0,0 +1 @@
++{ toString: !<tag:yaml.org,2002:js/function> 'function (){throw new Error("code execution")}' } : key
+diff --git a/test/issues/0480-fn2.yml b/test/issues/0480-fn2.yml
+new file mode 100644
+index 0000000..6efd250
+--- /dev/null
++++ b/test/issues/0480-fn2.yml
+@@ -0,0 +1 @@
++{ __proto__: { toString: !<tag:yaml.org,2002:js/function> 'function(){throw new Error("code execution")}' } } : key
+diff --git a/test/issues/0480.js b/test/issues/0480.js
+new file mode 100644
+index 0000000..bd9f418
+--- /dev/null
++++ b/test/issues/0480.js
+@@ -0,0 +1,34 @@
++'use strict';
++
++
++var assert = require('assert');
++var yaml   = require('../../');
++var readFileSync = require('fs').readFileSync;
++
++
++test('Should not execute code when object with toString property is used as a key', function () {
++  var data = yaml.load(readFileSync(require('path').join(__dirname, '/0480-fn.yml'), 'utf8'));
++
++  assert.deepEqual(data, { '[object Object]': 'key' });
++});
++
++test('Should not execute code when object with __proto__ property is used as a key', function () {
++  var data = yaml.load(readFileSync(require('path').join(__dirname, '/0480-fn2.yml'), 'utf8'));
++
++  assert.deepEqual(data, { '[object Object]': 'key' });
++});
++
++test('Should not execute code when object inside array is used as a key', function () {
++  var data = yaml.load(readFileSync(require('path').join(__dirname, '/0480-fn-array.yml'), 'utf8'));
++
++  assert.deepEqual(data, { '123,[object Object]': 'key' });
++});
++
++// this test does not guarantee in any way proper handling of date objects,
++// it just keeps old behavior whenever possible
++test('Should leave non-plain objects as is', function () {
++  var data = yaml.load(readFileSync(require('path').join(__dirname, '/0480-date.yml'), 'utf8'));
++
++  assert.deepEqual(Object.keys(data).length, 1);
++  assert(/2019/.test(Object.keys(data)[0]));
++});
+-- 
+2.39.2 (Apple Git-143)
+
