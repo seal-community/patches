@@ -1,5 +1,5 @@
 # Seal Security Patches
-This is as a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
+This is a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
 The patches help quickly deal with the security risk in cases where the operational risk of a full version update is too significant.
 
 ![Seal Security Hero](https://drive.google.com/uc?export=view&id=1KvO4pKIYPsrPqD0Tdfl6Qu-8LbAv-J_J)
