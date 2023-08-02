@@ -1,16 +1,18 @@
 # Seal Security Patches
+
 This is a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
 The patches help quickly deal with the security risk in cases where the operational risk of a full version update is too significant.
 
-![Seal Security Hero](https://drive.google.com/uc?export=view&id=1KvO4pKIYPsrPqD0Tdfl6Qu-8LbAv-J_J)
+![Seal Security Hero](docs/assets/seal_hero.png)
 
-Developers everywhere constantly face scenarios where patching a security issue by performing a full version update is too time-consuming and/or impractical. Such as: 
+Developers everywhere constantly face scenarios where patching a security issue by performing a full version update is too time-consuming and/or impractical. Such as:
+
 - Breaking changes or deprecated features in the newer library version
 - Vulnerable transitive dependency
 - Vulnerable unmaintained library
 - Legacy codebase
 - Mission-critical application
-- Vulnerable third-party Container/VM images 
+- Vulnerable third-party Container/VM images
 - LLM-produced code (due to training cut-off)
 
 Whatever the scenario, unpatched vulnerabilities should be dealt with. At Seal Security, we help users achieve that while accounting for the operational risk with the help of the standalone security patch approach. 
@@ -20,52 +22,59 @@ To verify that a patch has no side effects and mitigates the security risk, the 
 ⭐ **To follow new patch releases, please leave a star.** ⭐
 
 ## How to Use the Repository
+
 **tl;dr** - git apply the relevant patches in the vulnerable library folder, rebuild, and replace the vulnerable library in your application.
 
 <details>
-<summary>npm example</summary> 
+<summary>npm example</summary>
 
 How to patch `CVE-2022-46175` in the `json5` library version `0.5.1`:
 
-1. **Find the patch you need**: The patches are arranged by ecosystem, namespace (if applicable), package name, and finally, package version. In our example, navigate to `npm->json5->0.5.1`. Each directory contains at least one SP (security patch) sub-directory. We will add additional SPs when new vulnerabilities are discovered and patched or if there's an issue with an existing SP. 
-2. **Pull the original version**: Get the source code for the version that needs fixing. In our example: https://github.com/json5/json5/tree/v0.5.1 
-3. **Download the patch(es)**: Move the patch files to the sources folder. 
-4. **Apply the patch(es)**: Apply all the patches within an SP directory in their order. If there are multiple SPs, apply all the patches in SP1, then SP2, etc. (edited) 
-    
-    ```
+1. **Find the patch you need**: The patches are arranged by ecosystem, namespace (if applicable), package name, and finally, package version. In our example, navigate to `npm->json5->0.5.1`. Each directory contains at least one SP (security patch) sub-directory. We will add additional SPs when new vulnerabilities are discovered and patched or if there's an issue with an existing SP.
+2. **Pull the original version**: Get the source code for the version that needs fixing. In our example: https://github.com/json5/json5/tree/v0.5.1
+3. **Download the patch(es)**: Move the patch files to the sources folder.
+4. **Apply the patch(es)**: Apply all the patches within an SP directory in their order. If there are multiple SPs, apply all the patches in SP1, then SP2, etc. (edited)
+
+    ```bash
     git apply 0001-CVE-2022-46175.patch
     ```
+
 5. **Build the package**: Instructions to build the package are ecosystem-specific and sometimes library-specific. Follow the relevant project documentation for this step. In our example:
-    ``` 
+    ```bash
     npm pack
     ```
 6.  **Replace the vulnerable library**: Instructions to replace the vulnerable package are ecosystem-specific. In our example:
-    ```
+    ```bash
     npm install <path_to_package_tgz>
     ```
 </details>
 
 ## How to Contribute
-We're excited to hear success stories, discuss possible integrations, receive requests for new patches, and review new security patches. Please open issues, pull requests, or contact us at: contribute@seal.security. 
+
+We're excited to hear success stories, discuss possible integrations, receive requests for new patches, and review new security patches. Please open issues, pull requests, or contact us at: [contribute@seal.security](mailto:contribute@seal.security).
 
 **IMPORTANT: DO NOT OPEN PUBLIC ISSUES FOR SECURITY FIXES BYPASS. PLEASE REFER TO THE SECURITY POLICY.**
 
 ## Coming Soon: Seal's Artifact Server
-To further simplify security patching efforts, Seal Security is developing a SaaS artifact server that allows users to apply security patches seamlessly as part of their SDLC with simple integrations. 
 
-With a free tier, automatic detection and application of new patches, and extensive security measures, we can increase your security posture significantly with minimal investment on your end. 
+To further simplify security patching efforts, Seal Security is developing a SaaS artifact server that allows users to apply security patches seamlessly as part of their SDLC with simple integrations.
 
-You can request early access by shooting an email to: waitlist@seal.security.
+With a free tier, automatic detection and application of new patches, and extensive security measures, we can increase your security posture significantly with minimal investment on your end.
+
+You can request early access by shooting an email to: [waitlist@seal.security](mailto:waitlist@seal.security).
 
 ## About Seal Security
-![Seal Security Logo](https://drive.google.com/uc?export=view&id=1mS4xmwe8ZnFwvW2ET1IWMWeGApXdpNky)
+
+![Seal Security Logo](docs/assets/logo.png)
 
 Seal Security is an early-stage cybersecurity startup committed to simplifying vulnerability remediation for developers and application security practitioners. For more details, visit our [website](https://seal.security).
 
 ## Legal Considerations
+
 The patches are published under an MIT license (refer to the LICENSE file). However, please keep in mind that you still need the code of the underlying library and must comply with its license.
 
 ## Patch List
+
 <details>
 <summary>Show</summary>
 
@@ -163,6 +172,7 @@ netmask|1.0.6|CVE-2021-28918
 netmask|1.0.6|CVE-2021-29418
 networkx|2.2|SNYK-PYTHON-NETWORKX-1062709
 node-jose|1.1.4|CVE-2023-25653
+node-jose|2.1.0|CVE-2023-25653
 nth-check|1.0.2|CVE-2021-3803
 org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
