@@ -177,6 +177,7 @@ nth-check|1.0.2|CVE-2021-3803
 org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
+protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
