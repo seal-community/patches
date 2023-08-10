@@ -86,6 +86,9 @@ ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
+com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
+com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
+com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
@@ -168,6 +171,7 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+net.minidev:json-smart|2.4.8|CVE-2023-1370
 netmask|1.0.6|CVE-2021-28918
 netmask|1.0.6|CVE-2021-29418
 networkx|2.2|SNYK-PYTHON-NETWORKX-1062709
