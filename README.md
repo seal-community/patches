@@ -89,6 +89,9 @@ axios|0.21.1|CVE-2021-3749
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
+com.nimbusds:nimbus-jose-jwt|9.23|CVE-2023-1370
+cups-libs|1:2.3.3op2-16.el9|CVE-2023-32324
+cups-libs|1:2.3.3op2-16.el9|CVE-2023-34241
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
@@ -171,6 +174,8 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+minimist|1.2.0|CVE-2020-7598
+minimist|1.2.0|CVE-2021-44906
 net.minidev:json-smart|2.4.8|CVE-2023-1370
 netmask|1.0.6|CVE-2021-28918
 netmask|1.0.6|CVE-2021-29418
