@@ -91,7 +91,10 @@ com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
 com.nimbusds:nimbus-jose-jwt|9.23|CVE-2023-1370
 cups-libs|1:2.3.3op2-16.el9|CVE-2023-32324
+cups-libs|1:2.3.3op2-16.el9|CVE-2023-32360
 cups-libs|1:2.3.3op2-16.el9|CVE-2023-34241
+cups-libs|1:2.3.3op2-16.el9_2.1|CVE-2023-32324
+cups-libs|1:2.3.3op2-16.el9_2.1|CVE-2023-34241
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
@@ -200,6 +203,8 @@ pyjwt|1.7.1|CVE-2022-29217
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 requests|2.14.2|CVE-2018-18074
+semver|7.3.2|CVE-2022-25883
+semver|7.3.5|CVE-2022-25883
 serialize-javascript|1.9.1|CVE-2019-16769
 serialize-javascript|1.9.1|CVE-2020-7660
 serialize-javascript|2.0.0|CVE-2019-16769
@@ -207,6 +212,7 @@ serialize-javascript|2.0.0|CVE-2020-7660
 serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
 tough-cookie|2.5.0|CVE-2023-26136
+trim|0.0.1|CVE-2020-7753
 undici|4.16.0|CVE-2023-24807
 vm2|3.9.11|CVE-2023-29017
 vm2|3.9.12|CVE-2023-29017
@@ -214,6 +220,7 @@ vm2|3.9.13|CVE-2023-29017
 vm2|3.9.14|CVE-2023-29017
 webpack|5.74.0|CVE-2023-28154
 webpack|5.75.0|CVE-2023-28154
+xml2js|0.4.19|CVE-2023-0842
 xml2js|0.4.23|CVE-2023-0842
 yargs-parser|7.0.0|CVE-2020-7608
 zstd|1.5.1-2.el9|CVE-2022-4899
