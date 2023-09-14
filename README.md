@@ -102,6 +102,7 @@ fast-json-patch|2.2.1|CVE-2021-4279
 fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
+got|6.7.1|CVE-2022-33987
 handlebars|4.1.2|CVE-2019-20920
 ini|1.3.5|CVE-2020-7788
 jinja2|2.8|CVE-2016-10745
