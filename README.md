@@ -103,6 +103,7 @@ fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987
+growl|1.9.2|CVE-2017-16042
 handlebars|4.1.2|CVE-2019-20920
 ini|1.3.5|CVE-2020-7788
 jinja2|2.8|CVE-2016-10745
@@ -166,6 +167,8 @@ lodash|4.17.5|CVE-2019-10744
 lodash|4.17.5|CVE-2020-28500
 lodash|4.17.5|CVE-2020-8203
 lodash|4.17.5|CVE-2021-23337
+lodash.template|3.6.2|CVE-2021-23337
+lodash.template|4.5.0|CVE-2021-23337
 luxon|1.24.0|CVE-2023-22467
 luxon|1.24.1|CVE-2023-22467
 luxon|1.25.0|CVE-2023-22467
@@ -187,8 +190,15 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+minimist|0.0.10|CVE-2020-7598
+minimist|0.0.10|CVE-2021-44906
+minimist|0.0.8|CVE-2020-7598
+minimist|0.0.8|CVE-2021-44906
 minimist|1.2.0|CVE-2020-7598
 minimist|1.2.0|CVE-2021-44906
+mongoose|5.3.3|CVE-2019-17426
+mongoose|5.3.3|CVE-2022-2564
+mongoose|5.3.3|CVE-2023-3696
 net.minidev:json-smart|2.4.8|CVE-2023-1370
 netmask|1.0.6|CVE-2021-28918
 netmask|1.0.6|CVE-2021-29418
