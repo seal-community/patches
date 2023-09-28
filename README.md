@@ -86,6 +86,8 @@ ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
+bson|1.0.9|CVE-2019-2391
+bson|1.0.9|CVE-2020-7610
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
@@ -105,6 +107,7 @@ global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987
 growl|1.9.2|CVE-2017-16042
 handlebars|4.1.2|CVE-2019-20920
+https-proxy-agent|1.0.0|CVE-2018-3739
 ini|1.3.5|CVE-2020-7788
 jinja2|2.8|CVE-2016-10745
 joblib|0.14.1|CVE-2022-21797
@@ -158,6 +161,17 @@ loader-utils|1.4.0|CVE-2022-37601
 loader-utils|2.0.0|CVE-2022-37601
 loader-utils|2.0.1|CVE-2022-37601
 loader-utils|2.0.2|CVE-2022-37601
+lodash|4.16.6|CVE-2018-16487
+lodash|4.16.6|CVE-2018-3721
+lodash|4.16.6|CVE-2019-1010266
+lodash|4.16.6|CVE-2019-10744
+lodash|4.16.6|CVE-2020-28500
+lodash|4.16.6|CVE-2020-8203
+lodash|4.16.6|CVE-2021-23337
+lodash|4.17.11|CVE-2019-10744
+lodash|4.17.11|CVE-2020-28500
+lodash|4.17.11|CVE-2020-8203
+lodash|4.17.11|CVE-2021-23337
 lodash|4.17.15|CVE-2020-28500
 lodash|4.17.15|CVE-2020-8203
 lodash|4.17.15|CVE-2021-23337
@@ -167,6 +181,7 @@ lodash|4.17.5|CVE-2019-10744
 lodash|4.17.5|CVE-2020-28500
 lodash|4.17.5|CVE-2020-8203
 lodash|4.17.5|CVE-2021-23337
+lodash.template|2.4.1|CVE-2021-23337
 lodash.template|3.6.2|CVE-2021-23337
 lodash.template|4.5.0|CVE-2021-23337
 luxon|1.24.0|CVE-2023-22467
@@ -224,6 +239,8 @@ serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
 tough-cookie|2.5.0|CVE-2023-26136
 trim|0.0.1|CVE-2020-7753
+underscore|1.4.4|CVE-2021-23358
+underscore|1.6.0|CVE-2021-23358
 undici|4.16.0|CVE-2023-24807
 vm2|3.9.11|CVE-2023-29017
 vm2|3.9.12|CVE-2023-29017
