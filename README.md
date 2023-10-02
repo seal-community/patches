@@ -81,6 +81,7 @@ The patches are published under an MIT license (refer to the LICENSE file). Howe
 Library | Version | Vulnerability
 --|--|--
 @fastify/multipart|7.3.0|CVE-2023-25576
+@okta/oidc-middleware|4.5.1|CVE-2022-3145
 acorn|5.7.3|GHSA-6chw-6frg-f759
 ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
@@ -105,6 +106,7 @@ fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987
+got|9.6.0|CVE-2022-33987
 growl|1.9.2|CVE-2017-16042
 handlebars|4.1.2|CVE-2019-20920
 https-proxy-agent|1.0.0|CVE-2018-3739
@@ -229,6 +231,7 @@ pyjwt|1.7.1|CVE-2022-29217
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 requests|2.14.2|CVE-2018-18074
+semver|7.0.0|CVE-2022-25883
 semver|7.3.2|CVE-2022-25883
 semver|7.3.5|CVE-2022-25883
 serialize-javascript|1.9.1|CVE-2019-16769
