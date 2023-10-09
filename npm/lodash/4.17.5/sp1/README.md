@@ -7,6 +7,7 @@ Fixes:
 - CVE-2020-8203
 - CVE-2020-28500
 - CVE-2021-23337
+- SNYK-JS-LODASH-608086
 
 For more information see:
   1. https://seal.security
