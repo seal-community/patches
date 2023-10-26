@@ -1,5 +1,7 @@
 # Seal Security Patches
 
+**Annoucement: Seal Security's public artifact server enters open-beta! Join the beta here: [https://app.sealsecurity.io](https://app.sealsecurity.io/?ref=seal-community). For feedback or feature request you can shoot an email to [info@seal.security](mailto:info@seal.security)**
+
 This is a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
 The patches help quickly deal with the security risk in cases where the operational risk of a full version update is too significant.
 
@@ -55,13 +57,13 @@ We're excited to hear success stories, discuss possible integrations, receive re
 
 **IMPORTANT: DO NOT OPEN PUBLIC ISSUES FOR SECURITY FIXES BYPASS. PLEASE REFER TO THE SECURITY POLICY.**
 
-## Coming Soon: Seal's Artifact Server
+## Seal's Artifact Server
 
-To further simplify security patching efforts, Seal Security is developing a SaaS artifact server that allows users to apply security patches seamlessly as part of their SDLC with simple integrations.
+Seal Security is hosting a public artifact server that allows users to apply security patches seamlessly as part of their SDLC with simple integrations.
 
-With a free tier, automatic detection and application of new patches, and extensive security measures, we can increase your security posture significantly with minimal investment on your end.
+The artifact server and the patches are free to use, with some integrations and features only being available to paying customers.
 
-You can request early access by shooting an email to: [waitlist@seal.security](mailto:waitlist@seal.security).
+You can access the artifact server here: [https://app.sealsecurity.io](https://app.sealsecurity.io/?ref=seal-community).
 
 ## About Seal Security
 
