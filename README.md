@@ -82,6 +82,7 @@ The patches are published under an MIT license (refer to the LICENSE file). Howe
 
 Library | Version | Vulnerability
 --|--|--
+@babel/traverse|7.22.4|CVE-2023-45133
 @fastify/multipart|7.3.0|CVE-2023-25576
 @okta/oidc-middleware|4.5.1|CVE-2022-3145
 acorn|5.7.3|GHSA-6chw-6frg-f759
@@ -89,6 +90,7 @@ ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
+axios|0.27.2|CVE-2023-45857
 bson|1.0.9|CVE-2019-2391
 bson|1.0.9|CVE-2020-7610
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
@@ -100,6 +102,8 @@ cups-libs|1:2.3.3op2-16.el9|CVE-2023-32360
 cups-libs|1:2.3.3op2-16.el9|CVE-2023-34241
 cups-libs|1:2.3.3op2-16.el9_2.1|CVE-2023-32324
 cups-libs|1:2.3.3op2-16.el9_2.1|CVE-2023-34241
+d3-color|1.4.0|GHSA-36jr-mh4h-2g58
+d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
@@ -213,12 +217,14 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+minimatch|3.0.4|CVE-2022-3517
 minimist|0.0.10|CVE-2020-7598
 minimist|0.0.10|CVE-2021-44906
 minimist|0.0.8|CVE-2020-7598
 minimist|0.0.8|CVE-2021-44906
 minimist|1.2.0|CVE-2020-7598
 minimist|1.2.0|CVE-2021-44906
+moment|2.29.3|CVE-2022-31129
 mongoose|5.3.3|CVE-2019-17426
 mongoose|5.3.3|CVE-2022-2564
 mongoose|5.3.3|CVE-2023-3696
@@ -249,7 +255,9 @@ serialize-javascript|2.0.0|CVE-2020-7660
 serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
 tough-cookie|2.5.0|CVE-2023-26136
+tough-cookie|4.1.2|CVE-2023-26136
 trim|0.0.1|CVE-2020-7753
+ua-parser-js|0.7.31|CVE-2022-25927
 underscore|1.4.4|CVE-2021-23358
 underscore|1.6.0|CVE-2021-23358
 undici|4.16.0|CVE-2023-24807
