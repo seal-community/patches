@@ -83,6 +83,7 @@ The patches are published under an MIT license (refer to the LICENSE file). Howe
 Library | Version | Vulnerability
 --|--|--
 @babel/traverse|7.22.4|CVE-2023-45133
+@babel/traverse|7.9.0|CVE-2023-45133
 @fastify/multipart|7.3.0|CVE-2023-25576
 @okta/oidc-middleware|4.5.1|CVE-2022-3145
 acorn|5.7.3|GHSA-6chw-6frg-f759
@@ -90,6 +91,7 @@ ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
+axios|0.21.4|CVE-2023-45857
 axios|0.27.2|CVE-2023-45857
 bson|1.0.9|CVE-2019-2391
 bson|1.0.9|CVE-2020-7610
@@ -105,6 +107,7 @@ cups-libs|1:2.3.3op2-16.el9_2.1|CVE-2023-34241
 d3-color|1.4.0|GHSA-36jr-mh4h-2g58
 d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
+decode-uri-component|0.2.0|CVE-2022-38900
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
 fast-json-patch|2.2.1|CVE-2021-4279
@@ -115,6 +118,7 @@ got|6.7.1|CVE-2022-33987
 got|9.6.0|CVE-2022-33987
 growl|1.9.2|CVE-2017-16042
 handlebars|4.1.2|CVE-2019-20920
+http-cache-semantics|4.1.0|CVE-2022-25881
 https-proxy-agent|1.0.0|CVE-2018-3739
 ini|1.3.5|CVE-2020-7788
 jinja2|2.8|CVE-2016-10745
@@ -217,6 +221,8 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+merge|1.2.1|CVE-2020-28499
+merge|1.2.1|SNYK-JS-MERGE-1040469
 minimatch|3.0.4|CVE-2022-3517
 minimist|0.0.10|CVE-2020-7598
 minimist|0.0.10|CVE-2021-44906
@@ -239,12 +245,17 @@ org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
 postcss|7.0.39|CVE-2023-44270
+postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
 protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
+qs|6.5.2|CVE-2022-24999
 requests|2.14.2|CVE-2018-18074
+scss-tokenizer|0.3.0|CVE-2022-25758
+semver|5.7.1|CVE-2022-25883
+semver|6.3.0|CVE-2022-25883
 semver|7.0.0|CVE-2022-25883
 semver|7.3.2|CVE-2022-25883
 semver|7.3.5|CVE-2022-25883
@@ -267,6 +278,7 @@ vm2|3.9.13|CVE-2023-29017
 vm2|3.9.14|CVE-2023-29017
 webpack|5.74.0|CVE-2023-28154
 webpack|5.75.0|CVE-2023-28154
+word-wrap|1.2.3|CVE-2023-26115
 xml2js|0.4.19|CVE-2023-0842
 xml2js|0.4.23|CVE-2023-0842
 yargs-parser|7.0.0|CVE-2020-7608

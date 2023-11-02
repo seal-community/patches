@@ -1,0 +1,43 @@
+From ff9aa49872f0470757944df0145a85308d00bf52 Mon Sep 17 00:00:00 2001
+From: Seal <info@seal.security>
+Date: Tue, 31 Oct 2023 19:48:37 +0200
+Subject: [PATCH 1/2] Seal Security Hotfix for merge 1.2.1
+
+This patch fixes:
+  SNYK-JS-MERGE-1040469
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/yeikos/js.merge/tree/v1.2.1
+---
+ merge.js     | 2 +-
+ merge.min.js | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/merge.js b/merge.js
+index 2aafcad..adf4c09 100644
+--- a/merge.js
++++ b/merge.js
+@@ -128,7 +128,7 @@
+ 
+ 			for (var key in item) {
+ 
+-				if (key === '__proto__') continue;
++				if (key === '__proto__' || key === 'constructor' || key === 'prototype') continue;
+ 
+ 				var sitem = clone ? Public.clone(item[key]) : item[key];
+ 
+diff --git a/merge.min.js b/merge.min.js
+index 00d1b1d..1590706 100644
+--- a/merge.min.js
++++ b/merge.min.js
+@@ -2,2 +2,2 @@
+ 
+-;(function(e){function r(e,t){if(s(e)!=="object")return t;for(var n in t){if(s(e[n])==="object"&&s(t[n])==="object"){e[n]=r(e[n],t[n])}else{e[n]=t[n]}}return e}function i(e,n,i){var o=i[0],u=i.length;if(e||s(o)!=="object")o={};for(var a=0;a<u;++a){var f=i[a],l=s(f);if(l!=="object")continue;for(var c in f){if(c==="__proto__")continue;var h=e?t.clone(f[c]):f[c];if(n){o[c]=r(o[c],h)}else{o[c]=h}}}return o}function s(e){return{}.toString.call(e).slice(8,-1).toLowerCase()}var t=function(e){return i(e===true,false,arguments)},n="merge";t.recursive=function(e){return i(e===true,true,arguments)};t.clone=function(e){var n=e,r=s(e),i,o;if(r==="array"){n=[];o=e.length;for(i=0;i<o;++i)n[i]=t.clone(e[i])}else if(r==="object"){n={};for(i in e)n[i]=t.clone(e[i])}return n};if(e){module.exports=t}else{window[n]=t}})(typeof module==="object"&&module&&typeof module.exports==="object"&&module.exports);
+\ No newline at end of file
++;(function(e){function r(e,t){if(s(e)!=="object")return t;for(var n in t){if(s(e[n])==="object"&&s(t[n])==="object"){e[n]=r(e[n],t[n])}else{e[n]=t[n]}}return e}function i(e,n,i){var o=i[0],u=i.length;if(e||s(o)!=="object")o={};for(var a=0;a<u;++a){var f=i[a],l=s(f);if(l!=="object")continue;for(var c in f){if(c==="__proto__"||c==="constructor"||c==="prototype")continue;var h=e?t.clone(f[c]):f[c];if(n){o[c]=r(o[c],h)}else{o[c]=h}}}return o}function s(e){return{}.toString.call(e).slice(8,-1).toLowerCase()}var t=function(e){return i(e===true,false,arguments)},n="merge";t.recursive=function(e){return i(e===true,true,arguments)};t.clone=function(e){var n=e,r=s(e),i,o;if(r==="array"){n=[];o=e.length;for(i=0;i<o;++i)n[i]=t.clone(e[i])}else if(r==="object"){n={};for(i in e)n[i]=t.clone(e[i])}return n};if(e){module.exports=t}else{window[n]=t}})(typeof module==="object"&&module&&typeof module.exports==="object"&&module.exports);
+\ No newline at end of file
+-- 
+
+
