@@ -141,6 +141,7 @@ json5|0.5.1|CVE-2022-46175
 json5|2.0.0|CVE-2022-46175
 json5|2.0.1|CVE-2022-46175
 json5|2.1.0|CVE-2022-46175
+json5|2.2.1|CVE-2022-46175
 libtiff|4.0.3-35.el7|CVE-2022-3970
 libtiff-devel|4.0.3-35.el7|CVE-2022-3970
 libtiff-static|4.0.3-35.el7|CVE-2022-3970
