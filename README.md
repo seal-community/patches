@@ -153,6 +153,8 @@ libtiff|4.0.3-35.el7|CVE-2022-3970
 libtiff-devel|4.0.3-35.el7|CVE-2022-3970
 libtiff-static|4.0.3-35.el7|CVE-2022-3970
 libtiff-tools|4.0.3-35.el7|CVE-2022-3970
+libxml2|2.9.1-6.el7_9.6|CVE-2022-40303
+libxml2|2.9.1-6.el7_9.6|CVE-2022-40304
 libzstd|1.5.1-2.el9|CVE-2022-4899
 libzstd-devel|1.5.1-2.el9|CVE-2022-4899
 libzstd-static|1.5.1-2.el9|CVE-2022-4899
