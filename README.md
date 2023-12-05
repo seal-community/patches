@@ -1,6 +1,6 @@
 # Seal Security Patches
 
-**Annoucement: Seal Security's public artifact server enters open-beta! Join the beta here: [https://app.sealsecurity.io](https://app.sealsecurity.io/?ref=seal-community). For feedback or feature request you can shoot an email to [info@seal.security](mailto:info@seal.security)**
+**Announcement: Seal Security's public artifact server enters open-beta! Join the beta here: [https://app.sealsecurity.io](https://app.sealsecurity.io/?ref=seal-community). For feedback or feature request you can shoot an email to [info@seal.security](mailto:info@seal.security)**
 
 This is a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
 The patches help quickly deal with the security risk in cases where the operational risk of a full version update is too significant.
