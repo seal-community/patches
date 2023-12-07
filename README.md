@@ -149,6 +149,7 @@ json5|2.1.2|CVE-2022-46175
 json5|2.1.3|CVE-2022-46175
 json5|2.2.0|CVE-2022-46175
 json5|2.2.1|CVE-2022-46175
+libseccomp|2.3.1-4.el7|CVE-2019-9893
 libtiff|4.0.3-35.el7|CVE-2022-3970
 libtiff-devel|4.0.3-35.el7|CVE-2022-3970
 libtiff-static|4.0.3-35.el7|CVE-2022-3970
@@ -254,6 +255,7 @@ nth-check|1.0.2|CVE-2021-3803
 org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
+pixman|0.34.0-1.el7|CVE-2022-44638
 postcss|7.0.39|CVE-2023-44270
 postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
@@ -263,6 +265,8 @@ pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 qs|6.5.2|CVE-2022-24999
 requests|2.14.2|CVE-2018-18074
+screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2015-6806
+screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2023-24626
 scss-tokenizer|0.3.0|CVE-2022-25758
 semver|5.7.1|CVE-2022-25883
 semver|6.3.0|CVE-2022-25883
