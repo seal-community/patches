@@ -291,6 +291,7 @@ serialize-javascript|2.0.0|CVE-2019-16769
 serialize-javascript|2.0.0|CVE-2020-7660
 serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
+tar|2:1.26-35.el7|CVE-2022-48303
 tough-cookie|2.5.0|CVE-2023-26136
 tough-cookie|4.1.2|CVE-2023-26136
 trim|0.0.1|CVE-2020-7753
