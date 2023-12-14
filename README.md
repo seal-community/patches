@@ -256,6 +256,7 @@ org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
 pixman|0.34.0-1.el7|CVE-2022-44638
+poppler|0.26.5-43.el7.1|CVE-2022-38784
 postcss|7.0.39|CVE-2023-44270
 postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
