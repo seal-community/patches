@@ -95,6 +95,7 @@ axios|0.21.4|CVE-2023-45857
 axios|0.27.2|CVE-2023-45857
 bson|1.0.9|CVE-2019-2391
 bson|1.0.9|CVE-2020-7610
+c-ares|1.10.0-3.el7|CVE-2022-4904
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
@@ -111,6 +112,7 @@ d3-color|1.4.0|GHSA-36jr-mh4h-2g58
 d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 decode-uri-component|0.2.0|CVE-2022-38900
+dmidecode|1:3.2-5.el7|CVE-2023-30630
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
 fast-json-patch|2.2.1|CVE-2021-4279
@@ -149,6 +151,8 @@ json5|2.1.2|CVE-2022-46175
 json5|2.1.3|CVE-2022-46175
 json5|2.2.0|CVE-2022-46175
 json5|2.2.1|CVE-2022-46175
+libXpm|3.5.12-2.el7_9|CVE-2022-44617
+libXpm|3.5.12-2.el7_9|CVE-2022-46285
 libseccomp|2.3.1-4.el7|CVE-2019-9893
 libtiff|4.0.3-35.el7|CVE-2022-3970
 libtiff-devel|4.0.3-35.el7|CVE-2022-3970
@@ -245,6 +249,9 @@ moment|2.29.3|CVE-2022-31129
 mongoose|5.3.3|CVE-2019-17426
 mongoose|5.3.3|CVE-2022-2564
 mongoose|5.3.3|CVE-2023-3696
+ncurses|5.9-14.20130511.el7_4|CVE-2023-29491
+ncurses-base|5.9-14.20130511.el7_4|CVE-2023-29491
+ncurses-libs|5.9-14.20130511.el7_4|CVE-2023-29491
 net.minidev:json-smart|2.4.8|CVE-2023-1370
 netmask|1.0.6|CVE-2021-28918
 netmask|1.0.6|CVE-2021-29418
@@ -262,6 +269,8 @@ postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
 protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
+python|2.7.5-92.el7_9|CVE-2022-45061
+python-libs|2.7.5-92.el7_9|CVE-2022-45061
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 qs|6.5.2|CVE-2022-24999
@@ -292,6 +301,8 @@ serialize-javascript|2.0.0|CVE-2019-16769
 serialize-javascript|2.0.0|CVE-2020-7660
 serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
+sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
+sysstat|10.1.5-19.el7|CVE-2022-39377
 tar|2:1.26-35.el7|CVE-2022-48303
 tough-cookie|2.5.0|CVE-2023-26136
 tough-cookie|4.1.2|CVE-2023-26136
