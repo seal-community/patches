@@ -5,8 +5,6 @@
 This is a centralized repository of standalone security patches that mitigate open-source libraries' vulnerabilities.
 The patches help quickly deal with the security risk in cases where the operational risk of a full version update is too significant.
 
-![Seal Security Hero](docs/assets/seal_hero.png)
-
 Developers everywhere constantly face scenarios where patching a security issue by performing a full version update is too time-consuming and/or impractical. Such as:
 
 - Breaking changes or deprecated features in the newer library version
