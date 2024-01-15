@@ -80,10 +80,13 @@ The patches are published under an MIT license (refer to the LICENSE file). Howe
 
 Library | Version | Vulnerability
 --|--|--
+@babel/traverse|7.18.8|CVE-2023-45133
 @babel/traverse|7.22.4|CVE-2023-45133
 @babel/traverse|7.9.0|CVE-2023-45133
 @fastify/multipart|7.3.0|CVE-2023-25576
 @okta/oidc-middleware|4.5.1|CVE-2022-3145
+ImageMagick|6.9.10.68-6.el7_9|CVE-2022-44267
+ImageMagick-devel|6.9.10.68-6.el7_9|CVE-2022-44267
 acorn|5.7.3|GHSA-6chw-6frg-f759
 ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
@@ -174,6 +177,10 @@ libtiff-static|4.0.3-35.el7|CVE-2022-3970
 libtiff-tools|4.0.3-35.el7|CVE-2022-3970
 libxml2|2.9.1-6.el7_9.6|CVE-2022-40303
 libxml2|2.9.1-6.el7_9.6|CVE-2022-40304
+libxml2-devel|2.9.1-6.el7_9.6|CVE-2022-40303
+libxml2-devel|2.9.1-6.el7_9.6|CVE-2022-40304
+libxml2-python|2.9.1-6.el7_9.6|CVE-2022-40303
+libxml2-python|2.9.1-6.el7_9.6|CVE-2022-40304
 libzstd|1.5.1-2.el9|CVE-2022-4899
 libzstd-devel|1.5.1-2.el9|CVE-2022-4899
 libzstd-static|1.5.1-2.el9|CVE-2022-4899
@@ -311,6 +318,7 @@ semver|7.3.2|CVE-2022-25883
 semver|7.3.3|CVE-2022-25883
 semver|7.3.4|CVE-2022-25883
 semver|7.3.5|CVE-2022-25883
+semver|7.3.7|CVE-2022-25883
 serialize-javascript|1.9.1|CVE-2019-16769
 serialize-javascript|1.9.1|CVE-2020-7660
 serialize-javascript|2.0.0|CVE-2019-16769
@@ -321,6 +329,7 @@ sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
 sysstat|10.1.5-19.el7|CVE-2022-39377
 tar|2:1.26-35.el7|CVE-2022-48303
 tough-cookie|2.5.0|CVE-2023-26136
+tough-cookie|4.0.0|CVE-2023-26136
 tough-cookie|4.1.2|CVE-2023-26136
 trim|0.0.1|CVE-2020-7753
 ua-parser-js|0.7.31|CVE-2022-25927
