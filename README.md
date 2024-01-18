@@ -114,6 +114,7 @@ d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 decode-uri-component|0.2.0|CVE-2022-38900
 dmidecode|1:3.2-5.el7|CVE-2023-30630
+dottie|2.0.2|CVE-2023-26132
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
 fast-json-patch|2.2.1|CVE-2021-4279
@@ -319,6 +320,7 @@ semver|7.3.3|CVE-2022-25883
 semver|7.3.4|CVE-2022-25883
 semver|7.3.5|CVE-2022-25883
 semver|7.3.7|CVE-2022-25883
+semver|7.3.8|CVE-2022-25883
 serialize-javascript|1.9.1|CVE-2019-16769
 serialize-javascript|1.9.1|CVE-2020-7660
 serialize-javascript|2.0.0|CVE-2019-16769

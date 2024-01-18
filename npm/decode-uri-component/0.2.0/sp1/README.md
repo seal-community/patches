@@ -2,6 +2,7 @@ Sealed version of decode-uri-component 0.2.0
 
 Fixes:
 - CVE-2022-38900
+- CVE-2022-38778
 
 For more information see:
   1. https://seal.security
