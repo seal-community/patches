@@ -94,6 +94,7 @@ async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
 axios|0.21.4|CVE-2023-45857
 axios|0.27.2|CVE-2023-45857
+axios|1.5.1|CVE-2023-45857
 bson|1.0.9|CVE-2019-2391
 bson|1.0.9|CVE-2020-7610
 c-ares|1.10.0-3.el7|CVE-2022-4904
@@ -118,7 +119,9 @@ dottie|2.0.2|CVE-2023-26132
 ejs|2.7.4|CVE-2022-29078
 ejs|2.7.4|SNYK-JS-EJS-1049328
 fast-json-patch|2.2.1|CVE-2021-4279
+fast-xml-parser|3.19.0|CVE-2023-26920
 fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
+follow-redirects|1.15.2|CVE-2023-26159
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987

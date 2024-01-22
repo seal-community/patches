@@ -1,7 +1,7 @@
 Sealed version of fast-xml-parser 3.19.0
 
 Fixes:
-- SNYK-JS-FASTXMLPARSER-3325616
+- CVE-2023-26920
 
 For more information see:
   1. https://seal.security
