@@ -80,7 +80,9 @@ The patches are published under an MIT license (refer to the LICENSE file). Howe
 
 Library | Version | Vulnerability
 --|--|--
+@babel/traverse|7.17.3|CVE-2023-45133
 @babel/traverse|7.18.8|CVE-2023-45133
+@babel/traverse|7.21.5|CVE-2023-45133
 @babel/traverse|7.22.4|CVE-2023-45133
 @babel/traverse|7.9.0|CVE-2023-45133
 @fastify/multipart|7.3.0|CVE-2023-25576
@@ -93,7 +95,11 @@ async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
 axios|0.21.4|CVE-2023-45857
+axios|0.26.1|CVE-2023-45857
 axios|0.27.2|CVE-2023-45857
+axios|1.3.6|CVE-2023-45857
+axios|1.4.0|CVE-2023-45857
+axios|1.5.0|CVE-2023-45857
 axios|1.5.1|CVE-2023-45857
 bson|1.0.9|CVE-2019-2391
 bson|1.0.9|CVE-2020-7610
@@ -305,6 +311,7 @@ requests|2.14.2|CVE-2018-18074
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2015-6806
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2023-24626
 scss-tokenizer|0.3.0|CVE-2022-25758
+semver|5.4.1|CVE-2022-25883
 semver|5.7.1|CVE-2022-25883
 semver|6.3.0|CVE-2022-25883
 semver|7.0.0|CVE-2022-25883
