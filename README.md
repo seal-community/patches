@@ -300,6 +300,8 @@ poppler|0.26.5-43.el7.1|CVE-2022-38784
 postcss|7.0.39|CVE-2023-44270
 postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
+protobufjs|6.11.2|CVE-2022-25878
+protobufjs|6.11.2|CVE-2023-36665
 protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
 python|2.7.5-92.el7_9|CVE-2022-45061
