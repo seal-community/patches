@@ -107,6 +107,8 @@ c-ares|1.10.0-3.el7|CVE-2022-4904
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2020-36518
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42003
 com.fasterxml.jackson.core:jackson-databind|2.13.1|CVE-2022-42004
+com.fasterxml.jackson.core:jackson-databind|2.13.2.2|CVE-2022-42003
+com.fasterxml.jackson.core:jackson-databind|2.13.2.2|CVE-2022-42004
 com.nimbusds:nimbus-jose-jwt|9.23|CVE-2023-1370
 cups-libs|1:2.2.6-51.el8_8.2|CVE-2023-32324
 cups-libs|1:2.2.6-51.el8_8.2|CVE-2023-34241
@@ -128,6 +130,7 @@ fast-json-patch|2.2.1|CVE-2021-4279
 fast-xml-parser|3.19.0|CVE-2023-26920
 fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
 follow-redirects|1.15.2|CVE-2023-26159
+follow-redirects|1.15.3|CVE-2023-26159
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987
@@ -342,6 +345,11 @@ serialize-javascript|2.1.0|CVE-2020-7660
 sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
 sysstat|10.1.5-19.el7|CVE-2022-39377
 tar|2:1.26-35.el7|CVE-2022-48303
+tar|4.4.13|CVE-2021-32803
+tar|4.4.13|CVE-2021-32804
+tar|4.4.13|CVE-2021-37701
+tar|4.4.13|CVE-2021-37712
+tar|4.4.13|CVE-2021-37713
 tough-cookie|2.5.0|CVE-2023-26136
 tough-cookie|4.0.0|CVE-2023-26136
 tough-cookie|4.1.2|CVE-2023-26136
