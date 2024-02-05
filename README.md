@@ -131,6 +131,7 @@ fast-xml-parser|3.19.0|CVE-2023-26920
 fast-xml-parser|3.19.0|SNYK-JS-FASTXMLPARSER-3325616
 follow-redirects|1.15.2|CVE-2023-26159
 follow-redirects|1.15.3|CVE-2023-26159
+github.com/Masterminds/goutils|1.1.0|CVE-2021-4238
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
 got|6.7.1|CVE-2022-33987
@@ -316,6 +317,7 @@ requests|2.14.2|CVE-2018-18074
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2015-6806
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2023-24626
 scss-tokenizer|0.3.0|CVE-2022-25758
+semver|4.3.6|CVE-2022-25883
 semver|5.4.1|CVE-2022-25883
 semver|5.7.1|CVE-2022-25883
 semver|6.3.0|CVE-2022-25883
