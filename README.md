@@ -152,6 +152,8 @@ grub2-tools-extra|1:2.02-0.87.el7.centos.6|CVE-2022-3775
 grub2-tools-minimal|1:2.02-0.87.el7.centos.6|CVE-2022-2601
 grub2-tools-minimal|1:2.02-0.87.el7.centos.6|CVE-2022-3775
 handlebars|4.1.2|CVE-2019-20920
+hoek|2.16.3|CVE-2018-3728
+hoek|2.16.3|CVE-2020-36604
 http-cache-semantics|4.1.0|CVE-2022-25881
 https-proxy-agent|1.0.0|CVE-2018-3739
 ini|1.3.5|CVE-2020-7788
@@ -299,6 +301,9 @@ openssl-libs|1:1.0.2k-25.el7_9|CVE-2023-0464
 org.scala-lang:scala-library|2.13.8|CVE-2022-36944
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
+paramiko|2.2.1|CVE-2018-1000805
+paramiko|2.2.1|CVE-2018-7750
+paramiko|2.2.1|CVE-2022-24302
 pixman|0.34.0-1.el7|CVE-2022-44638
 poppler|0.26.5-43.el7.1|CVE-2022-38784
 postcss|7.0.39|CVE-2023-44270
