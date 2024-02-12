@@ -122,6 +122,7 @@ d3-color|1.4.0|GHSA-36jr-mh4h-2g58
 d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 decode-uri-component|0.2.0|CVE-2022-38900
+deep-extend|0.4.2|CVE-2018-3750
 dmidecode|1:3.2-5.el7|CVE-2023-30630
 dottie|2.0.2|CVE-2023-26132
 ejs|2.7.4|CVE-2022-29078
@@ -157,6 +158,7 @@ hoek|2.16.3|CVE-2020-36604
 http-cache-semantics|4.1.0|CVE-2022-25881
 https-proxy-agent|1.0.0|CVE-2018-3739
 ini|1.3.5|CVE-2020-7788
+ip|1.1.8|CVE-2023-42282
 jinja2|2.8|CVE-2016-10745
 joblib|0.14.1|CVE-2022-21797
 js-yaml|3.10.0|SNYK-JS-JSYAML-174129
@@ -365,6 +367,8 @@ ua-parser-js|0.7.31|CVE-2022-25927
 underscore|1.4.4|CVE-2021-23358
 underscore|1.6.0|CVE-2021-23358
 undici|4.16.0|CVE-2023-24807
+vite|4.4.11|CVE-2023-49293
+vite|4.4.11|CVE-2024-23331
 vm2|3.9.11|CVE-2023-29017
 vm2|3.9.12|CVE-2023-29017
 vm2|3.9.13|CVE-2023-29017
