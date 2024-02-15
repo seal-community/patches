@@ -321,6 +321,12 @@ protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
 python|2.7.5-92.el7_9|CVE-2022-45061
 python-libs|2.7.5-92.el7_9|CVE-2022-45061
+python-multipart|0.0.5|CVE-2024-24762
+python-multipart|0.0.5|GHSA-2jv5-9r88-3w3p
+python-multipart|0.0.5|GHSA-93gm-qmq6-w238
+python-multipart|0.0.6|CVE-2024-24762
+python-multipart|0.0.6|GHSA-2jv5-9r88-3w3p
+python-multipart|0.0.6|GHSA-93gm-qmq6-w238
 pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 qs|6.5.2|CVE-2022-24999
@@ -355,6 +361,9 @@ serialize-javascript|2.0.0|CVE-2019-16769
 serialize-javascript|2.0.0|CVE-2020-7660
 serialize-javascript|2.1.0|CVE-2019-16769
 serialize-javascript|2.1.0|CVE-2020-7660
+set-getter|0.1.0|CVE-2021-25949
+set-value|0.4.3|CVE-2019-10747
+set-value|0.4.3|CVE-2021-23440
 sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
 sysstat|10.1.5-19.el7|CVE-2022-39377
 tar|2:1.26-35.el7|CVE-2022-48303
