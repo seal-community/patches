@@ -89,6 +89,7 @@ Library | Version | Vulnerability
 @okta/oidc-middleware|4.5.1|CVE-2022-3145
 ImageMagick|6.9.10.68-6.el7_9|CVE-2022-44267
 ImageMagick-devel|6.9.10.68-6.el7_9|CVE-2022-44267
+PyJWT|2.3.0|CVE-2022-29217
 acorn|5.7.3|GHSA-6chw-6frg-f759
 ansi-regex|3.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
