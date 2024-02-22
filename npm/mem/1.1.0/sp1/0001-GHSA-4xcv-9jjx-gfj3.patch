@@ -1,0 +1,80 @@
+From 9c193836e2fa1f23aeba0bf9f71e4d4dd4b36330 Mon Sep 17 00:00:00 2001
+From: Seal <info@seal.security>
+Date: Wed, 21 Feb 2024 15:58:12 +0200
+Subject: [PATCH 1/1] Seal Security Hotfix for mem 1.1.0
+
+This patch fixes:
+  GHSA-4xcv-9jjx-gfj3
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/sindresorhus/mem/tree/v1.1.0
+---
+ index.js | 10 +++++++++-
+ test.js  | 31 +++++++++++++++++++++++++++++++
+ 2 files changed, 40 insertions(+), 1 deletion(-)
+
+diff --git a/index.js b/index.js
+index aa5a073..db94f58 100644
+--- a/index.js
++++ b/index.js
+@@ -35,7 +35,15 @@ module.exports = (fn, opts) => {
+ 			data: ret,
+ 			maxAge: Date.now() + (opts.maxAge || 0)
+ 		});
+-
++		// if its not in cache, add it to the cache and create a setTimeout call
++		if (typeof opts.maxAge === 'number') {
++			setTimeout(() => {
++				// making sure the item wasnt removed from cache already
++				if (cache.has(key)) {
++					cache.delete(key);
++				}
++			}, opts.maxAge);
++		}
+ 		return ret;
+ 	};
+ 
+diff --git a/test.js b/test.js
+index fba99a9..f5d2bc8 100644
+--- a/test.js
++++ b/test.js
+@@ -88,3 +88,34 @@ test('.clear()', t => {
+ 	t.is(memoized(), 1);
+ 	t.is(memoized(), 1);
+ });
++
++test('maxAge option deletes old items', async t => {
++	let i = 0;
++	const f = () => i++;
++	const cache = new Map();
++	const deleted = [];
++	const remove = cache.delete.bind(cache);
++	cache.delete = item => {
++		deleted.push(item);
++		return remove(item);
++	};
++	const memoized = m(f, {maxAge: 200, cache});
++	t.is(memoized('firstKey'), 0);
++	t.is(memoized('secKey'), 1);
++	await delay(100);
++	t.is(memoized('firstKey'), 0);
++	t.is(memoized('secKey'), 1);
++	t.is(cache.has('firstKey'), true);
++	t.is(cache.has('secKey'), true);
++	t.is(deleted.length, 0);
++	t.is(cache.size, 2);
++	await delay(200);
++	t.is(cache.has('firstKey'), false);
++	t.is(cache.has('secKey'), false);
++	t.is(deleted.length, 2);
++	t.is(deleted[0], 'firstKey');
++	t.is(deleted[1], 'secKey');
++	t.is(cache.size, 0);
++	t.is(memoized('firstKey'), 2);
++	t.is(cache.get('firstKey').data, 2);
++});
+-- 
+
+

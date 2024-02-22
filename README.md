@@ -124,6 +124,8 @@ d3-color|1.4.1|GHSA-36jr-mh4h-2g58
 d3-color|2.0.0|GHSA-36jr-mh4h-2g58
 decode-uri-component|0.2.0|CVE-2022-38900
 deep-extend|0.4.2|CVE-2018-3750
+django|3.2.18|CVE-2023-31047
+django|3.2.18|CVE-2023-36053
 dmidecode|1:3.2-5.el7|CVE-2023-30630
 dottie|2.0.2|CVE-2023-26132
 ejs|2.7.4|CVE-2022-29078
@@ -280,6 +282,7 @@ luxon|3.0.4|CVE-2023-22467
 luxon|3.1.0|CVE-2023-22467
 luxon|3.1.1|CVE-2023-22467
 luxon|3.2.0|CVE-2023-22467
+mem|1.1.0|GHSA-4xcv-9jjx-gfj3
 merge|1.2.1|CVE-2020-28499
 merge|1.2.1|SNYK-JS-MERGE-1040469
 minimatch|3.0.4|CVE-2022-3517
@@ -306,6 +309,9 @@ nth-check|1.0.2|CVE-2021-3803
 openssl|1:1.0.2k-25.el7_9|CVE-2023-0464
 openssl-libs|1:1.0.2k-25.el7_9|CVE-2023-0464
 org.scala-lang:scala-library|2.13.8|CVE-2022-36944
+org.springframework.security:spring-security-config|5.6.1|CVE-2023-34034
+org.springframework:spring-beans|5.3.15|CVE-2022-22965
+org.springframework:spring-beans|5.3.15|CVE-2022-22970
 paramiko|1.16.0|CVE-2018-1000805
 paramiko|1.16.0|CVE-2018-7750
 paramiko|2.2.1|CVE-2018-1000805
@@ -366,6 +372,7 @@ set-getter|0.1.0|CVE-2021-25949
 set-value|0.4.3|CVE-2019-10747
 set-value|0.4.3|CVE-2021-23440
 sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
+sqlparse|0.4.3|CVE-2023-30608
 sysstat|10.1.5-19.el7|CVE-2022-39377
 tar|2:1.26-35.el7|CVE-2022-48303
 tar|4.4.13|CVE-2021-32803
