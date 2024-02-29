@@ -92,6 +92,8 @@ ImageMagick-devel|6.9.10.68-6.el7_9|CVE-2022-44267
 PyJWT|2.3.0|CVE-2022-29217
 acorn|5.7.3|GHSA-6chw-6frg-f759
 ansi-regex|3.0.0|CVE-2021-3807
+ansi-regex|4.1.0|CVE-2021-3807
+ansi-regex|5.0.0|CVE-2021-3807
 async|2.6.3|CVE-2021-43138
 async-es|2.6.3|CVE-2021-43138
 axios|0.21.1|CVE-2021-3749
@@ -182,6 +184,7 @@ js-yaml|3.8.3|SNYK-JS-JSYAML-174129
 js-yaml|3.8.4|SNYK-JS-JSYAML-174129
 js-yaml|3.9.0|SNYK-JS-JSYAML-174129
 js-yaml|3.9.1|SNYK-JS-JSYAML-174129
+json-schema|0.2.3|CVE-2021-3918
 json5|0.5.1|CVE-2022-46175
 json5|2.0.0|CVE-2022-46175
 json5|2.0.1|CVE-2022-46175
@@ -326,6 +329,7 @@ protobufjs|6.11.2|CVE-2022-25878
 protobufjs|6.11.2|CVE-2023-36665
 protobufjs|6.11.3|CVE-2023-36665
 pyjwt|1.7.1|CVE-2022-29217
+pyjwt|2.3.0|CVE-2022-29217
 python|2.7.5-92.el7_9|CVE-2022-45061
 python-libs|2.7.5-92.el7_9|CVE-2022-45061
 python-multipart|0.0.5|CVE-2024-24762
@@ -338,6 +342,7 @@ pyyaml|5.1|CVE-2020-14343
 pyyaml|5.1|CVE-2020-1747
 qs|6.5.2|CVE-2022-24999
 requests|2.14.2|CVE-2018-18074
+requests|2.26.0|CVE-2023-32681
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2015-6806
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2023-24626
 scss-tokenizer|0.3.0|CVE-2022-25758
@@ -371,6 +376,7 @@ serialize-javascript|2.1.0|CVE-2020-7660
 set-getter|0.1.0|CVE-2021-25949
 set-value|0.4.3|CVE-2019-10747
 set-value|0.4.3|CVE-2021-23440
+snappier|1.1.0|CVE-2023-28638
 sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
 sqlparse|0.4.3|CVE-2023-30608
 sysstat|10.1.5-19.el7|CVE-2022-39377
