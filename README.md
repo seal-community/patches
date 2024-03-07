@@ -186,6 +186,7 @@ js-yaml|3.9.0|SNYK-JS-JSYAML-174129
 js-yaml|3.9.1|SNYK-JS-JSYAML-174129
 json-schema|0.2.3|CVE-2021-3918
 json5|0.5.1|CVE-2022-46175
+json5|1.0.1|CVE-2022-46175
 json5|2.0.0|CVE-2022-46175
 json5|2.0.1|CVE-2022-46175
 json5|2.1.0|CVE-2022-46175
@@ -228,7 +229,9 @@ loader-utils|1.0.1|CVE-2022-37601
 loader-utils|1.0.2|CVE-2022-37601
 loader-utils|1.0.3|CVE-2022-37601
 loader-utils|1.0.4|CVE-2022-37601
+loader-utils|1.2.0|CVE-2022-37599
 loader-utils|1.2.0|CVE-2022-37601
+loader-utils|1.2.0|CVE-2022-37603
 loader-utils|1.2.1|CVE-2022-37601
 loader-utils|1.2.2|CVE-2022-37601
 loader-utils|1.2.3|CVE-2022-37601
@@ -325,6 +328,8 @@ poppler|0.26.5-43.el7.1|CVE-2022-38784
 postcss|7.0.39|CVE-2023-44270
 postcss|8.4.20|CVE-2023-44270
 postcss|8.4.30|CVE-2023-44270
+protobufjs|6.10.2|CVE-2022-25878
+protobufjs|6.10.2|CVE-2023-36665
 protobufjs|6.11.2|CVE-2022-25878
 protobufjs|6.11.2|CVE-2023-36665
 protobufjs|6.11.3|CVE-2023-36665
@@ -343,6 +348,9 @@ pyyaml|5.1|CVE-2020-1747
 qs|6.5.2|CVE-2022-24999
 requests|2.14.2|CVE-2018-18074
 requests|2.26.0|CVE-2023-32681
+requests|2.27.1|CVE-2023-32681
+requests|2.28.0|CVE-2023-32681
+requests|2.30.0|CVE-2023-32681
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2015-6806
 screen|4.1.0-0.27.20120314git3c2946.el7_9|CVE-2023-24626
 scss-tokenizer|0.3.0|CVE-2022-25758
@@ -376,6 +384,8 @@ serialize-javascript|2.1.0|CVE-2020-7660
 set-getter|0.1.0|CVE-2021-25949
 set-value|0.4.3|CVE-2019-10747
 set-value|0.4.3|CVE-2021-23440
+set-value|2.0.0|CVE-2019-10747
+set-value|2.0.0|CVE-2021-23440
 snappier|1.1.0|CVE-2023-28638
 sqlite|3.7.17-8.el7_7.1|CVE-2019-5827
 sqlparse|0.4.3|CVE-2023-30608
@@ -394,6 +404,11 @@ ua-parser-js|0.7.31|CVE-2022-25927
 underscore|1.4.4|CVE-2021-23358
 underscore|1.6.0|CVE-2021-23358
 undici|4.16.0|CVE-2023-24807
+urllib3|1.26.16|CVE-2023-43804
+urllib3|1.26.16|CVE-2023-45803
+urllib3|2.0.4|CVE-2023-43804
+urllib3|2.0.4|CVE-2023-45803
+urllib3|2.0.6|CVE-2023-45803
 vite|4.4.11|CVE-2023-49293
 vite|4.4.11|CVE-2024-23331
 vm2|3.9.11|CVE-2023-29017
@@ -405,6 +420,7 @@ webpack|5.75.0|CVE-2023-28154
 word-wrap|1.2.3|CVE-2023-26115
 xml2js|0.4.19|CVE-2023-0842
 xml2js|0.4.23|CVE-2023-0842
+y18n|4.0.0|CVE-2020-7774
 yargs-parser|7.0.0|CVE-2020-7608
 zstd|1.5.1-2.el9|CVE-2022-4899
 
