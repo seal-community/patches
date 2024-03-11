@@ -1,0 +1,11 @@
+Sealed version of loader-utils 2.0.2
+
+Fixes:
+- CVE-2022-37599
+- CVE-2022-37601
+- CVE-2022-37603
+
+For more information see:
+  1. https://seal.security
+  2. https://github.com/seal-community
+  3. https://github.com/webpack/loader-utils/tree/v2.0.2
