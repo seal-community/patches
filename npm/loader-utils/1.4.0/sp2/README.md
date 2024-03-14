@@ -1,4 +1,4 @@
-Sealed version of loader-utils 1.2.0
+Sealed version of loader-utils 1.4.0
 
 Fixes:
 - CVE-2022-37599
