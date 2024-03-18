@@ -261,6 +261,7 @@ langchain|0.0.300|CVE-2024-28088
 langchain|0.0.301|CVE-2024-28088
 langchain|0.0.302|CVE-2024-28088
 langchain|0.0.303|CVE-2024-28088
+langchain-core|0.1.23|CVE-2024-28088
 libXpm|3.5.12-1.el7|CVE-2022-44617
 libXpm|3.5.12-1.el7|CVE-2022-46285
 libXpm|3.5.12-2.el7_9|CVE-2022-44617
