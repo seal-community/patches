@@ -89,6 +89,7 @@ Library | Version | Vulnerability
 @okta/oidc-middleware|4.5.1|CVE-2022-3145
 ImageMagick|6.9.10.68-6.el7_9|CVE-2022-44267
 ImageMagick-devel|6.9.10.68-6.el7_9|CVE-2022-44267
+Snappier|1.1.0|CVE-2023-28638
 acorn|5.7.3|GHSA-6chw-6frg-f759
 ansi-regex|3.0.0|CVE-2021-3807
 ansi-regex|4.1.0|CVE-2021-3807
@@ -190,6 +191,7 @@ fast-json-patch|2.2.1|CVE-2021-4279
 fast-xml-parser|3.19.0|CVE-2023-26920
 follow-redirects|1.15.2|CVE-2023-26159
 follow-redirects|1.15.3|CVE-2023-26159
+getobject|0.1.0|CVE-2020-28282
 github.com/Masterminds/goutils|1.1.0|CVE-2021-4238
 glob-parent|3.1.0|CVE-2020-28469
 global-modules-path|2.3.1|CVE-2022-21191
